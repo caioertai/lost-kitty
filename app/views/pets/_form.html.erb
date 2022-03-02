@@ -1,0 +1,7 @@
+<%= simple_form_for pet do |f| -%>
+  <%= f.input :name %>
+  <%= f.input :species, collection: Pet::VALID_SPECIES %>
+  <%= f.input :weight_in_grams %>
+  <%= f.input :microchipped %>
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end -%>

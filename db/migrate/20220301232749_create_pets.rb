@@ -3,7 +3,7 @@ class CreatePets < ActiveRecord::Migration[6.1]
     create_table :pets do |t|
       t.string :name
       t.string :species
-      t.boolean :microchipped
+      t.boolean :microchipped, default: false, null: false
       t.integer :weight_in_grams
 
       t.timestamps

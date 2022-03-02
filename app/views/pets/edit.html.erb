@@ -1,0 +1,5 @@
+<div class="container">
+  <p><%= link_to "Back to the list", pets_path %></p>
+  <h1>Change info for <%= @pet.name %></h1>
+  <%= render "pets/form", pet: @pet %>
+</div>
